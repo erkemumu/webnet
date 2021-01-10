@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
+"""
+命令行公用程序
+管理网站配置的文件，是接受命令行指令的工具程序
+Django所有命令都是运行此程序    
+"""
 import os
 import sys
 

@@ -13,6 +13,12 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     a2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+"""
+设置每一个URL的网址要对应的函数以及对应的方式
+是创建新的网页时新编辑的文件！！！
+
+"""
+
 from django.contrib import admin
 from django.urls import path
 """asfdfdsaf"""
