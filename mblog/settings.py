@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 新创建的网站都要先打开这个文件，进行编辑设置的操作，
 
 """
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'mblog.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -111,8 +112,10 @@ LANGUAGE_CODE = 'zh-Hans'
 """
 
 # TIME_ZONE = 'UTC'
-TIME_ZONE = 'Asia/Beijing'
-
+TIME_ZONE = 'Asia/Shanghai'
+"""
+时区中没有Beijing
+"""
 USE_I18N = True
 
 USE_L10N = True

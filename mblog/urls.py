@@ -21,7 +21,11 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-"""asfdfdsaf"""
+
+from mainsite.views import homepage
+from mainsite.views import showpost
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', homepage),
+    path('post/<slug:slug>/', showpost)
 ]
